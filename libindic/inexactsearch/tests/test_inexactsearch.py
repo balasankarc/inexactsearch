@@ -33,7 +33,6 @@ class InexactSearchTest(TestCase):
                                0.123, places=3)
 
     def test_compare(self):
-        print self.ies.compare('toxicity', 'city')
         self.assertEqual(self.ies.compare("toxicity", "city"), 0.8)
         self.assertEqual(self.ies.compare(u"ಮಾವಿನ ಹಣ್ಣು", u"माविन हण्णु "),
                          0.9)
